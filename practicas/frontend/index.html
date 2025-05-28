@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corrector IA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="container">
+    <h1>Corrector IA</h1>
+    <form id="uploadForm">
+      <div class="form-group">
+        <label for="file">Selecciona un archivo</label>
+        <input type="file" id="file" name="file" multiple required />
+        <ul id="fileList"></ul>
+      </div>
+
+      <div class="form-group">
+        <label for="prompt">Escribe la correción que deseas hacer</label>
+        <textarea id="prompt" name="prompt" placeholder="Ejemplo: Corrige errores ortográficos..." required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+      <button id="downloadBtn" style="display:none; margin-top: 10px;">Descargar archivo corregido</button>
+    </form>
+    <div id="status"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

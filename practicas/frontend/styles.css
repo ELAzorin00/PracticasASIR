@@ -1,0 +1,132 @@
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo general */
+/*body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #333452;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}*/
+body {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('imagenes/fondoeduca1.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* oscurece un poco la imagen */
+  z-index: 0;
+}
+
+.container {
+  background-color: #5e6285fd;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Título */
+h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Formulario */
+.form-group {
+  margin-bottom: 25px;
+  background-color: #858faf;
+  padding: 18px 15px;
+  border-radius: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+input[type="file"],
+textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botón */
+button {
+  background-color: #884bf8;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #7a3ae1;
+}
+
+/* Estado */
+#status {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+#fileList {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#fileList li {
+  margin-bottom: 5px;
+  padding: 6px 10px;
+  background-color: #6f7293;
+  border-radius: 6px;
+}
